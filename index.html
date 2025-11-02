@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>هدية الى وهـج</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="assets/foreveryoung.mp3" id="linkmp3" class="sembunyi" loop></audio>
+    <audio src="assets/i-love-you.mp3" id="loveAudio" class="sembunyi"></audio>
+    <audio src="assets/mwaah.mp3" id="mwaahAudio" class="sembunyi" loop></audio>
+    
+    <div class="overlay">
+        <div class="loading-message">Hey you!<br>Please wait...</div>
+        <div id="loveIn" class="blocklove">
+            <a href="#" target="_blank" class="lovein"></a>
+            <p id="ket">انتِ وهـج؟</p>
+        </div>
+    </div>
+
+    <div id="bodyblur">
+        <img src="assets/wp2.jpeg" id="wallpaper" />
+        <div id="thisblur"></div>
+    </div>
+
+    <div class="header-text">
+        <h1 class="main-title">
+            مرت أفضل ايام حياتي مع افضل و اجمل و اكثر انسانة متميزة ارتاح ليها قلبي
+            <span class="sub-title">أنتِ وهجي في ظلام حياتي</span>
+        </h1>
+    </div>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div id="stiker1" class="scale0 stiker">
+                        <img src="assets/pusn.gif" />
+                    </div>
+                    <h1 id="teks1" class="scale0">
+                        وهجي الحبيب... 🫢<br><br> >>>>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div id="stiker2" class="scale0 stiker">
+                        <img id="stikerDuaDef" src="assets/hearthappy.gif" />
+                        <img id="stikerDua1" class="sembunyi" src="assets/smprt.gif" />
+                        <img id="stikerDua2" class="sembunyi" src="assets/pusn.gif" />
+                        <img id="stikerDua3" class="sembunyi" src="assets/ngumpet.gif" />
+                    </div>
+                    <h1 id="teks2" class="scale0">
+                        يا من تضيء حياتي... هل تحبيني؟ 🫣
+                    </h1>
+                    <div id="Tombol" style="opacity:0;transform: scale(0)">
+                        <a id="By" onclick="swiper.slideNext();">نعم</a>
+                        <a id="Bn" onclick="fungsibaru('Bn')">لا</a>
+                    </div>
+                    <div id="teksTolakGroup" class="sembunyi">
+                        <p id="teksTolak">هاي ليش 😡</p>
+                        <p id="teksTolak2">انتِ متأكدة ما تحبيني؟ 🥹</p>
+                        <p id="teksTolak3">ارجوووووك 🥲</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <div id="stiker3" class="scale0 stiker">
+                        <img id="stikerAkhir1" src="assets/cilukba.gif" />
+                        <img id="stikerAkhir2" class="sembunyi" src="assets/pandapanah.gif" />
+                        <img id="stikerAkhir3" class="sembunyi" src="assets/emawh.gif" />
+                    </div>
+                    <div id="scroll-container" class="blocktext">
+                        <h1 id="teks3" class="scale0">
+                            <span id="subteks2a">
+                                <b>عادي ... </b>اصلًا ما اريد اعرف,<br>
+                                لاني اعرف انك تحبيني!! 😝
+                            </span>
+                            <span id="subteks2b">
+                                <b>لأننننن ... 🫣💐</b>
+                            </span>
+                        </h1>
+
+                        <h1 id="teksTerakhir" class="sembunyi">
+                            انا احبككككك حببببببببب حببببببب قد الكون و قد ارض و السماء ، احبككككك 🥹🥹😻🌟💘💘💘❤️‍🩹💋💞
+                        </h1>
+
+                        <h1 id="teksTambahan" class="sembunyi">
+                            <span id="teksLove">احبكككك</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="container">
+        <div class="wrapper">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
